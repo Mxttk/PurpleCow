@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    background-image: url('Images/BgMain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headings{
+    font-size: 50px;
+    color: rgb(106, 9, 172);
+}
+
+.paragraphs{
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.card{
+    color: fff;
+    background-color: #000000;
+    border: 1px solid rgb(77, 36, 110);
+    border-radius: 8px;
+    padding-left: 80px;
+    padding-top: 20px;
+    margin: 10px;
+    width: 50%;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card-two{
+    transform: translate(85%,0%);
+    color: fff;
+    background-color: #000000;
+    border: 1px solid rgb(77, 36, 110);
+    border-radius: 8px;
+    padding-left: 80px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-two-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.text-section{
+    margin-top: 15%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+.text-intro{
+    width: 40%;
+    color: rgb(245, 243, 243);
+    font-size: 100px;
+    text-align: center;
+    transform: translate(75%,30%);
+}
+
+.text-sub-intro{
+    font-size: 25px;
+    color: rgb(245, 243, 243);
+    text-align: center;
+    margin-top: -40px;
+}
+
+.bg-image-inner{
+    background: rgba(127, 77, 184, 1.0);   
+    border: 1px solid rgb(77, 36, 110);
+    border-radius: 8px;
+    width: 80%; /* Set the desired width */
+    height: 5%;
+    transform: translate(0%,30%);
+    margin: 0 auto; /* Set left and right margins to 'auto' */
+}
+
+.bg-image-outer{
+    background-image: url('Images/BgMain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 100%;
+}
+
+.animated-text {
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 100px;
+    min-width: 320px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+    .animated-text span {
+        position: relative;
+    }
+
+        .animated-text span::before {
+            content: "Yourself";
+            color: rgb(187, 157, 247);
+            animation: words 20s infinite;
+        }
+
+        .animated-text span::after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            background-color: rgba(127, 77, 184, 1.0);
+            opacity: 1.0;
+            border-left: 2px solid #9a75e4;
+            right: -8px;
+            animation: cursor .8s infinite, typing 20s steps(14) infinite;
+        }
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid rgba(127, 77, 184, 1.0);
+    }
+}
+
+@keyframes words {
+    0%,20% {
+        content: "Yourself";
+    }
+
+    21%,40% {
+        content: "Your Work";
+    }
+
+    41%,60% {
+        content: "Your Attitude";
+    }
+
+    61%,80% {
+        content: "Your Ethics";
+    }
+
+    81%,100% {
+        content: "Everything";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
