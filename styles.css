@@ -8,6 +8,11 @@ body {
     background-size: cover;
 }
 
+.img-cow{
+    transform: translate(380%,-30%);
+    margin-bottom: -20%;
+}
+
 .headings{
     font-size: 50px;
     color: rgb(106, 9, 172);
@@ -84,6 +89,7 @@ body {
     color: rgb(245, 243, 243);
     text-align: center;
     margin-top: -40px;
+    width: 100%;
 }
 
 .bg-image-inner{
